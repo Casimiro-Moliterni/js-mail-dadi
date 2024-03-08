@@ -33,38 +33,39 @@
 
 // stabilire il vincitore , in base al punteggio più alto 
 
-const userEvenOrOdd = prompt('Scegli pari o dispari');
-console.log(userEvenOrOdd);
 
-const userNumber = parseInt(prompt('Dammi un numero tra 1 e 9'));
-console.log(userNumber);
 
-// generare un numero casuale per il computer compreso tra 1 e 9
-const computerNumber = Math.floor(Math.random() * 9) + 1;
+
+
+// generare un numero casuale per il computer compreso tra 1 e 6
+const computerNumber = Math.floor(Math.random() * 6) + 1;
+console.log(computerNumber);
+
+const userNumber = Math.floor(Math.random() * 6) + 1;
 console.log(computerNumber);
 
 // sommare i 2 numeri
 const sum = userNumber + computerNumber;
 console.log(sum);
 
-// stabilire se il numero è pari o dispari
-let gameResult;
-if(sum % 2 === 0) {
-    gameResult = 'pari';
-} else {
-    gameResult = 'dispari';
-}
-console.log(gameResult);
+// // stabilire se il numero è pari o dispari
+// let gameResult;
+// if(sum % 2 === 0) {
+//     gameResult = 'pari';
+// } else {
+//     gameResult = 'dispari';
+// }
+// console.log(gameResult);
 
-// confrontiamo la scelta dell'utente pari e dispari
-let userMessage;
-if(userEvenOrOdd === gameResult) {
-    userMessage = 'Hai vinto';
-    // alert('Hai vinto');
-} else {
-    userMessage = 'Hai perso';
-    // alert('Hai perso');
-}
+// // confrontiamo la scelta dell'utente pari e dispari
+// let userMessage;
+// if(userEvenOrOdd === gameResult) {
+//     userMessage = 'Hai vinto';
+//     // alert('Hai vinto');
+// } else {
+//     userMessage = 'Hai perso';
+//     // alert('Hai perso');
+// }
 
-// comunichiamo se ha vinto o ha perso
-alert(userMessage);
+// // comunichiamo se ha vinto o ha perso
+// alert(userMessage);
