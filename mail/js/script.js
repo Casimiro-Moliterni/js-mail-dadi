@@ -21,14 +21,13 @@
 // Mail
 
 // Chiedi all’utente la sua email,
-// const userMail = prompt('Scrivi la tua email')
-// console.log(userMail)
+const userMail = prompt('Scrivi la tua email')
+
 
 // lista mail 
 
 
 const listMail = ['marcolandi@gmail.com','andrearossi@libero.it','massimolitre@hotmail.it','moliternicasimiro@hotmail.it','giulioCartes@gmail.com','cosimo@gmail.com','lucasaper@gmail.com'];
-const userMail ='moliternicasimiro@hotmail.it';
 
 let: mailFound = false ;
 
