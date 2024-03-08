@@ -38,34 +38,19 @@
 
 
 // generare un numero casuale per il computer compreso tra 1 e 6
-const computerNumber = Math.floor(Math.random() * 6) + 1;
-console.log(computerNumber);
-
 const userNumber = Math.floor(Math.random() * 6) + 1;
-console.log(computerNumber);
+console.log(userNumber , 'Numero Giocatore');
 
-// sommare i 2 numeri
-const sum = userNumber + computerNumber;
-console.log(sum);
+const computerNumber = Math.floor(Math.random() * 6) + 1 ;
+console.log(computerNumber,'Numero Computer');
 
-// // stabilire se il numero è pari o dispari
-// let gameResult;
-// if(sum % 2 === 0) {
-//     gameResult = 'pari';
-// } else {
-//     gameResult = 'dispari';
-// }
-// console.log(gameResult);
+let gameResult;
+if(computerNumber === userNumber){
+    gameResult = 'Pareggio';
+}else if (userNumber > computerNumber){
+    gameResult = 'Hai vinto , complimenti!';
+}else if (computerNumber > userNumber){
+    gameResult = 'Hai vinto il Computer!';
+}
 
-// // confrontiamo la scelta dell'utente pari e dispari
-// let userMessage;
-// if(userEvenOrOdd === gameResult) {
-//     userMessage = 'Hai vinto';
-//     // alert('Hai vinto');
-// } else {
-//     userMessage = 'Hai perso';
-//     // alert('Hai perso');
-// }
-
-// // comunichiamo se ha vinto o ha perso
-// alert(userMessage);
+console.log(gameResult)
