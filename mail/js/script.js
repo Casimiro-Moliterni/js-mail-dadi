@@ -17,3 +17,39 @@
 // 3. si ma noi cosa vogliamo fare?
 // 4. torniamo a scrivere in italiano
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+// Mail
+
+// Chiedi all’utente la sua email,
+// const userMail = prompt('Scrivi la tua email')
+// console.log(userMail)
+
+// lista mail 
+
+
+const listMail = ['marcolandi@gmail.com','andrearossi@libero.it','massimolitre@hotmail.it','moliternicasimiro@hotmail.it','giulioCartes@gmail.com','cosimo@gmail.com','lucasaper@gmail.com'];
+const userMail ='moliternicasimiro@hotmail.it';
+
+let: mailFound = false ;
+
+
+// lista mail,
+for (let i = 0; i < listMail.length; i++) {
+    const thisMail = listMail[i];
+    console.log(thisMail)
+
+
+//controlla mail per trovare quella giusta
+if(thisMail === userMail){
+    mailFound = true ;
+}
+// stampa un messaggio appropriato sull’esito del controllo.
+
+}
+
+// stampa un messaggio appropriato sull’esito del controllo.
+if(mailFound === true){
+    console.log('"puoi accedere"')
+}else{
+    console.log('"non puoi accedere"')
+}
